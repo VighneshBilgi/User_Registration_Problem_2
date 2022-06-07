@@ -50,53 +50,6 @@ public class UserRegistration {
         return result;
     }
 
-//    public void passwordRule1(String password){
-//
-//        String PasswordPattern="[a-zA-Z0-9~!@#$]{8,}";
-//
-//        Pattern pattern=Pattern.compile(PasswordPattern);
-//        Matcher matcher=pattern.matcher(password);
-//        Boolean result=matcher.matches();
-//
-//        if(result==true){
-//            passwordRule2(password);
-//        }else{
-//            invalidPassword();
-//        }
-//
-//    }
-//
-//    public void passwordRule2(String password){
-//
-//        String PasswordPattern="^(?=.*[A-Z])[a-zA-Z0-9@#$%^&+]{8,}";
-//
-//        Pattern pattern4=Pattern.compile(PasswordPattern);
-//        Matcher matcher4=pattern4.matcher(password);
-//        Boolean result4=matcher4.matches();
-//
-//        if(result4==true){
-//            passwordRule3(password);
-//        }else{
-//            invalidPassword();
-//        }
-//
-//    }
-//
-//    public void passwordRule3(String password) {
-//
-//        String PasswordPattern = "^(?=.*[0-9])(?=.*[A-Z])[a-zA-Z0-9@#$%^&+]{8,}$";
-//
-//        Pattern pattern4 = Pattern.compile(PasswordPattern);
-//        Matcher matcher4 = pattern4.matcher(password);
-//        Boolean result4 = matcher4.matches();
-//
-//        if (result4 == true) {
-//            passwordRule4(password);
-//        } else {
-//            invalidPassword();
-//        }
-//    }
-
     public boolean passwordRule(String password) {
 
         String PasswordPattern = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&+*])[a-zA-Z0-9@!#$%^&+*]{8,}$";
@@ -106,12 +59,6 @@ public class UserRegistration {
         Boolean result4 = matcher4.matches();
 
         return result4;
-
-//        if (result4 == true) {
-//            System.out.println("Password is valid");
-//        } else {
-//            System.out.println("Invalid, minimum 8 characters required with atleast 1 of them being upper case and atleast 1 of them being a number and exactly 1 of them being a special character.");
-//        }
     }
 
     public void emailSampleValidation(String emailSample){

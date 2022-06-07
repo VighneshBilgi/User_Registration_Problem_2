@@ -8,14 +8,6 @@ import static org.junit.Assert.*;
 
 public class UserRegistrationTest {
 
-//    @Before
-//    public void setUp() throws Exception {
-//    }
-//
-//    @After
-//    public void tearDown() throws Exception {
-//    }
-
     @Test
     public void givenFirstName_WhenValid_ShouldReturnTrue() {
         UserRegistration userRegistration=new UserRegistration();
@@ -86,7 +78,4 @@ public class UserRegistrationTest {
         assertEquals("Password ",false,result);
     }
 
-//    @Test
-//    public void emailSampleValidation() {
-//    }
 }
