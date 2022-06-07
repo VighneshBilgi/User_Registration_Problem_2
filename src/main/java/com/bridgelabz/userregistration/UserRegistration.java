@@ -61,7 +61,7 @@ public class UserRegistration {
         return result4;
     }
 
-    public void emailSampleValidation(String emailSample){
+    public boolean emailSampleValidation(String emailSample){
 
         System.out.println("Checking for Email sample: "+emailSample);
 
@@ -71,15 +71,9 @@ public class UserRegistration {
         Matcher matcher = pattern.matcher(emailSample);
         Boolean result = matcher.matches();
 
-        if (result == true) {
-            System.out.println("Email is Valid.");
-        } else {
-            System.out.println("Email is not valid.");
-        }
+        return result;
 
     }
-
-
 
     public void isValid(boolean result){
         if (result == true) {
