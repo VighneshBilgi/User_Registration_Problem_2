@@ -99,7 +99,7 @@ public class UserRegistration {
 
     public boolean passwordRule(String password) {
 
-        String PasswordPattern = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[@#$%^&+*])[a-zA-Z0-9@#$%^&+*]{8,}$";
+        String PasswordPattern = "^(?=.*[0-9])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&+*])[a-zA-Z0-9@!#$%^&+*]{8,}$";
 
         Pattern pattern4 = Pattern.compile(PasswordPattern);
         Matcher matcher4 = pattern4.matcher(password);
